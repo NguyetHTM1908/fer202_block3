@@ -1,0 +1,127 @@
+/* Custom Carousel Styles */
+.carousel-wrapper {
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.carousel {
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+}
+
+.carousel-item {
+  height: 600px !important;
+  width: 100vw !important;
+}
+
+.carousel-item img {
+  object-fit: cover !important;
+  object-position: center !important;
+  width: 100vw !important;
+  height: 100% !important;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  bottom: 30px !important;
+  left: 30px !important;
+  right: 30px !important;
+  text-align: left !important;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.75rem !important;
+  color: #ffffff !important;
+}
+
+.carousel-caption p {
+  font-size: 1.125rem !important;
+  color: #e0e0e0 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px !important;
+  height: 50px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50% !important;
+  margin: auto 20px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.carousel-indicators {
+  bottom: 20px !important;
+}
+
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+}
+
+.carousel-indicators button.active {
+  background-color: #ffffff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 400px !important;
+  }
+  
+  .carousel-caption {
+    padding: 1rem !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    right: 20px !important;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 300px !important;
+  }
+  
+  .carousel-caption {
+    padding: 0.75rem !important;
+    bottom: 15px !important;
+    left: 15px !important;
+    right: 15px !important;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.875rem !important;
+  }
+}

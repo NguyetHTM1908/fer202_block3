@@ -1,0 +1,72 @@
+/* Khung tổng thể */
+.app-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 12px 32px;
+}
+
+/* Tiêu đề chính */
+.section-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 8px 0 24px;
+}
+
+/* Lưới 3 card */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 18rem);
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Card chung */
+.student-card.card {
+  width: 18rem;
+  min-height: 380px;            /* ép tất cả card cùng chiều cao */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  display: flex;
+  flex-direction: column;       /* để ảnh + body xếp dọc */
+}
+
+/* Ảnh đại diện */
+.student-card .card-img-top {
+  height: 220px;                /* ảnh cố định chiều cao */
+  object-fit: cover;            /* crop cho đẹp, không méo */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Body card */
+.student-card .card-body {
+  flex-grow: 1;                 /* chiếm đều phần còn lại */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;    /* nội dung + nút luôn nằm đáy */
+}
+
+/* Email */
+.student-card .card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Tuổi */
+.student-card .age {
+  display: inline-block;
+  font-size: .85rem;
+  color: #6c757d;
+  background: #f1f3f5;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-bottom: 8px;
+}
+
+/* Nút Edit */
+.student-card .btn-edit {
+  align-self: flex-start;       /* nút nằm bên trái */
+  padding: 4px 12px;
+  font-size: .85rem;
+}
